@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации и авторизации</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+
+<body>
+    <Article class = "container">
+     
+        <div class = "block">
+         
+         <section class="block_item block-item">
+            <h2 class="block-item__title">У вас уже есть аккаунт?</h2>
+            <button class="block-item__btn signin-btn">Войти</button>
+         </section>
+         <section class="block_item block-item">
+            <h2 class="block-item__title">У вас нету аккаунта?</h2>
+            <button class="block-item__btn signup-btn">Зарегистрироваться</button>
+         </section>
+        </div>
+
+        <div class="form-box">
+<div class="form form_signin">
+    <h3 class="form__title">Вход</h3>
+
+    <p>
+        <input type = "text" class = "form__input" id = "PoleDlyaLogina" placeholder="Логин">
+    </p>
+    <p>
+        <input type = "password" class = "form__input" id = "PoleDlyaPassword" placeholder="Пароль">
+    </p>
+    <p>
+        <button class ="form__btn" id = "EnterButton">Войти</button>
+    </p>
+    <p>
+        <i class = "form__messageSignin"></i>
+    </p>
+</div>
+
+<div class="form form_signup">
+    <h3 class="form__title">Регистрация</h3>
+
+    <p>
+        <input type = "text" class = "form__input" id = "RegistrPoleName" placeholder="Имя">
+    </p>
+
+    <p>
+        <input type = "text" class = "form__input" id = "RegisterPoleLogin" placeholder="Логин">
+    </p>
+    <p>
+        <input type = "password" class = "form__input" id = "RegisterPolePassword" placeholder="Пароль">
+    </p>
+    <p>
+        <input type = "password" class = "form__input" id = "RegisterPoleRepeatPassword" placeholder="Подтвердите пароль">
+    </p>
+    <p>
+        <button class ="form__btn form__btn_signup" id = "RegistrButton">Зарегистрироваться</button>
+    </p>
+    <p>
+        <i class = " form__messageSignup" ></i>
+    </p>
+</div>
+        </div>
+    </Article>
+    
+    <script src="Register.js"></script>
+</body>
+</html>
